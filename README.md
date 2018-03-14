@@ -20,7 +20,7 @@ You can execute any of these commands on the board. The command is sent over the
 
 To resolve this issue, I have provided a way to create a set of commands and send them all over the COM port as a single batch. In this way all the commands are executed in sequence natively on the Ardunio without any COM port delay.
 
-For examples of both, see the following example:
+For example:
 
 ```java
 try (ArduinoBoard board = ArduinoBoard.detectAndConnect()) {
