@@ -1,9 +1,13 @@
 # robindrew-arduino
 Controller API for the Arduino
 
-### Quick Start
-The following example demostrates how to connect to the board (it can be an UNO or MEGA), and then issue a few simple commands to get the on board LED flashing.
+### Dependencies
+This library is dependent on the [RXTX](http://rxtx.qbang.org/wiki/index.php/Main_Page) library for Java. This provides the means with which you can communicate with devices like the Arduino across the COM port.
 
+### Sketch File
+The sketch used by this API is simple and well documented. It is intended to be loaded on to the Arduino once and then all subsequent interaction uses the commands built in to the sketch. View the sketch source [here](https://github.com/robindrew/robindrew-arduino/blob/master/src/main/arduino/jrl/jrl.ino).
+
+### Commands
 There are a number of commands available. All the basic commands for reading and writing to pins are included, but also some more advanced commands are available too:
 
 * PinMode
@@ -20,7 +24,8 @@ You can execute any of these commands on the board. The command is sent over the
 
 To resolve this issue, I have provided a way to create a set of commands and send them all over the COM port as a single batch. In this way all the commands are executed in sequence natively on the Ardunio without any COM port delay.
 
-For example:
+## Example
+The following example demostrates how to connect to the board (it can be an UNO or MEGA), and then issue a few simple commands to get the on board LED flashing. It includes the same sequence of commands, both sent individually to the board, and all in one go as a batch.
 
 ```java
 try (ArduinoBoard board = ArduinoBoard.detectAndConnect()) {
