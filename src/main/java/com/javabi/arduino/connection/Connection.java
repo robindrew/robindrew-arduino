@@ -19,8 +19,7 @@ public class Connection implements AutoCloseable {
 	}
 
 	/**
-	 * Detect the serial ports and attempt to connect to each one until
-	 * successful.
+	 * Detect the serial ports and attempt to connect to each one until successful.
 	 */
 	public static Connection detectAndConnect() {
 
@@ -94,8 +93,7 @@ public class Connection implements AutoCloseable {
 			input.skipBytes(0);
 			int response = input.readByte();
 			if (response != 2) {
-				throw new ConnectException(
-						"Unexpected response from serial connection: " + name + ", response=" + response);
+				throw new ConnectException("Unexpected response from serial connection: " + name + ", response=" + response);
 			}
 
 			// Read the board name

@@ -8,13 +8,11 @@ import com.javabi.arduino.pin.Pin;
 
 /**
  * <p>
- * Digital pins D0 and D1 will NOT be available for digitalRead() or
- * ditalWrite() when using serial communication.
+ * Digital pins D0 and D1 will NOT be available for digitalRead() or ditalWrite() when using serial communication.
  * </p>
  * <p>
- * Digital pins D3, D5, D6, D9, D10 and D11 work fully with analogWrite() using
- * PWM (Pulse Wave Modulation). This is effectively turning the digital pin on
- * and off very fast!
+ * Digital pins D3, D5, D6, D9, D10 and D11 work fully with analogWrite() using PWM (Pulse Wave Modulation). This is
+ * effectively turning the digital pin on and off very fast!
  * </p>
  */
 public class ArduinoMega extends ArduinoBoard {

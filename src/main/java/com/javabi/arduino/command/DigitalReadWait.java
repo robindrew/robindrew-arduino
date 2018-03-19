@@ -9,7 +9,7 @@ public class DigitalReadWait extends PinCommand<Integer> {
 
 	public static final boolean GREATER_THAN = true;
 	public static final boolean LESS_THAN = false;
-	
+
 	private final int value;
 	private final boolean greaterThan;
 

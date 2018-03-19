@@ -28,22 +28,22 @@ public abstract class Command<D> implements ICommand<D> {
 
 	public static String getCommandName(int id) {
 		switch (id) {
-		case COMMAND_READY:
-			return "ready";
-		case COMMAND_ECHO:
-			return "echo";
-		case COMMAND_PIN_MODE:
-			return "pinMode";
-		case COMMAND_DIGITAL_READ:
-			return "digitalRead";
-		case COMMAND_DIGITAL_WRITE:
-			return "digitalWrite";
-		case COMMAND_ANALOG_READ:
-			return "analogRead";
-		case COMMAND_ANALOG_WRITE:
-			return "analogWrite";
-		default:
-			return "unknown";
+			case COMMAND_READY:
+				return "ready";
+			case COMMAND_ECHO:
+				return "echo";
+			case COMMAND_PIN_MODE:
+				return "pinMode";
+			case COMMAND_DIGITAL_READ:
+				return "digitalRead";
+			case COMMAND_DIGITAL_WRITE:
+				return "digitalWrite";
+			case COMMAND_ANALOG_READ:
+				return "analogRead";
+			case COMMAND_ANALOG_WRITE:
+				return "analogWrite";
+			default:
+				return "unknown";
 		}
 	}
 

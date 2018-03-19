@@ -260,11 +260,11 @@ public class InputBuffer implements SerialPortEventListener {
 	@Override
 	public void serialEvent(SerialPortEvent event) {
 		switch (event.getEventType()) {
-		case SerialPortEvent.DATA_AVAILABLE:
-			dataAvailable(event);
-			break;
-		default:
-			log.warn("Unhandled Serial Port Event: " + event.getEventType());
+			case SerialPortEvent.DATA_AVAILABLE:
+				dataAvailable(event);
+				break;
+			default:
+				log.warn("Unhandled Serial Port Event: " + event.getEventType());
 		}
 	}
 

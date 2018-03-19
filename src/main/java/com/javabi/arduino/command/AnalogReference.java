@@ -5,8 +5,7 @@ import com.javabi.arduino.connection.OutputBuffer;
 import com.javabi.arduino.pin.ReferenceType;
 
 /**
- * Configures the reference voltage used for analog input (i.e. the value used
- * as the top of the input range).
+ * Configures the reference voltage used for analog input (i.e. the value used as the top of the input range).
  */
 public class AnalogReference extends Command<Void> {
 
