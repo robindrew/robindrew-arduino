@@ -1,12 +1,12 @@
 package com.javabi.arduino.command;
 
-import static com.javabi.arduino.board.ArduinoUno.A0;
-import static com.javabi.arduino.command.DigitalReadWait.GREATER_THAN;
-import static com.javabi.arduino.pin.Mode.INPUT;
+import static com.robindrew.arduino.board.ArduinoUno.A0;
+import static com.robindrew.arduino.command.DigitalReadWait.GREATER_THAN;
+import static com.robindrew.arduino.pin.Mode.INPUT;
 
 import org.junit.Test;
 
-import com.javabi.arduino.board.ArduinoBoard;
+import com.robindrew.arduino.board.ArduinoBoard;
 
 public class SwitchPressTest {
 

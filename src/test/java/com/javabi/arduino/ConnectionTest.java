@@ -5,9 +5,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.javabi.arduino.connection.Connection;
-import com.javabi.arduino.connection.InputBuffer;
-import com.javabi.arduino.connection.OutputBuffer;
+import com.robindrew.arduino.connection.Connection;
+import com.robindrew.arduino.connection.InputBuffer;
+import com.robindrew.arduino.connection.OutputBuffer;
 
 public class ConnectionTest {
 
